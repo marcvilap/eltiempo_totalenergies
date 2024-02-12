@@ -1,17 +1,26 @@
 ---
 import { Image } from 'astro:assets'
 import Icon from '$components/Icon.astro'
-import image07 from '$assets/images/image07.webp'
+import image07 from '$assets/images/image07.jpg'
 ---
 
 <section class="overflow-clip">
 	<div data-reveal-group class="container grid gap-8 lg:grid-cols-2 xl:gap-24">
 		<div data-reveal="fade-in-right">
-			<h2 class="mb-6 text-4xl font-bold md:text-5xl">
+			<a
+				href="https://www.totalenergies.es/es/hogares/calefaccion-y-agua/plan-renove-caldera?utm_source=el-tiempo&utm_medium=display&utm_campaign=planrenove2024&utm_content=planrenove2024"
+				rel="sponsored"
+				target="_blank"
+				class="mb-6 text-4xl font-bold md:text-5xl"
+			>
 				La mejor oportunidad para cuidar tu caldera
-			</h2>
+			</a>
 			<p>
-				Aquí es donde entra en juego el <a class="font-bold text-[#006DFF] underline" href="/"
+				Aquí es donde entra en juego el <a
+					target="_blank"
+					rel="sponsored"
+					class="font-bold text-[#006DFF] underline"
+					href="https://www.totalenergies.es/es/hogares/calefaccion-y-agua/plan-renove-caldera?utm_source=el-tiempo&utm_medium=display&utm_campaign=planrenove2024&utm_content=planrenove2024"
 					>Plan Renove de TotalEnergies</a
 				>. Renovar tu caldera con este plan no solo es una decisión ambientalmente responsable, sino
 				también financieramente inteligente. La oferta, desde tan solo <strong
@@ -62,13 +71,22 @@ import image07 from '$assets/images/image07.webp'
 				</ul>
 			</div>
 		</div>
-		<div data-reveal="fade-in-left" class="relative lg:-mr-8 xl:-mr-20">
+		<div data-reveal="fade-in-left" class="relative flex items-end justify-end lg:-mr-8 xl:-mr-20">
 			<Image
 				class="absolute size-full rounded-l-2xl object-cover"
 				src={image07}
 				width={864}
 				alt=""
 			/>
+			<a
+				target="_blank"
+				rel="sponsored"
+				class="relative m-4 inline-flex items-center gap-2 rounded-full bg-[#006DFF] px-5 py-2 font-bold text-white"
+				href="https://www.totalenergies.es/es/hogares/calefaccion-y-agua/plan-renove-caldera?utm_source=el-tiempo&utm_medium=display&utm_campaign=planrenove2024&utm_content=planrenove2024"
+			>
+				<span>Plan Renove Calderas</span>
+				<Icon class="w-2" name="arrow-right" />
+			</a>
 		</div>
 	</div>
 </section>

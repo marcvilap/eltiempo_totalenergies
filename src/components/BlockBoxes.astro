@@ -18,7 +18,7 @@ const { image, box1, box2 } = Astro.props
 		box1 && (
 			<>
 				<div class="container relative">
-					<div class="max-w-xs rounded-2xl bg-white p-8 shadow-2xl">{box1}</div>
+					<div class="max-w-xs rounded-2xl bg-white p-8 shadow-2xl" set:html={box1} />
 				</div>
 				<div class="h-screen" />
 			</>
@@ -28,7 +28,7 @@ const { image, box1, box2 } = Astro.props
 		box2 && (
 			<>
 				<div class="container relative">
-					<div class="ml-auto max-w-xs rounded-2xl bg-white p-8 shadow-2xl">{box2}</div>
+					<div class="ml-auto max-w-xs rounded-2xl bg-white p-8 shadow-2xl" set:html={box2} />
 				</div>
 				<div class="h-screen" />
 			</>

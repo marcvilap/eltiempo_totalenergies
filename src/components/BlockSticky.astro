@@ -13,6 +13,7 @@ const { image, title, description, alternate } = Astro.props
 
 <section>
 	<Image
+		style="transform: scaleX(-1);"
 		class="parallax-zoom-in sticky top-0 h-screen w-full object-cover"
 		src={image}
 		width={1920}
@@ -24,7 +25,7 @@ const { image, title, description, alternate } = Astro.props
 			class:list={['max-w-lg rounded-2xl bg-white p-8 shadow-2xl xl:px-12', alternate && 'ml-auto']}
 		>
 			<h3 class="mb-6 text-3xl font-bold">{title}</h3>
-			<p>{description}</p>
+			<p set:html={description} />
 		</div>
 		<div class="h-screen"></div>
 	</div>
