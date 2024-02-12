@@ -1,0 +1,74 @@
+---
+import { Image } from 'astro:assets'
+import Icon from '$components/Icon.astro'
+import image07 from '$assets/images/image07.webp'
+---
+
+<section class="overflow-clip">
+	<div data-reveal-group class="container grid gap-8 lg:grid-cols-2 xl:gap-24">
+		<div data-reveal="fade-in-right">
+			<h2 class="mb-6 text-4xl font-bold md:text-5xl">
+				La mejor oportunidad para cuidar tu caldera
+			</h2>
+			<p>
+				Aquí es donde entra en juego el <a class="font-bold text-[#006DFF] underline" href="/"
+					>Plan Renove de TotalEnergies</a
+				>. Renovar tu caldera con este plan no solo es una decisión ambientalmente responsable, sino
+				también financieramente inteligente. La oferta, desde tan solo <strong
+					>63,95€ y con posibilidad de pago en hasta 24 cuotas sin intereses</strong
+				>, hace que la transición hacia una caldera eficiente sea accesible para todos.
+			</p>
+			<div class="mt-8 rounded-2xl bg-[#006DFF] p-8 text-white">
+				<p>
+					Además, La oferta del Plan Renove abarca los aspectos esenciales para una instalación
+					exitosa:
+				</p>
+				<ul class="mt-6">
+					<li class="flex items-start gap-2">
+						<Icon class="mt-2 w-4 shrink-0" name="check" />
+						<span
+							><strong>Caldera de condensación:</strong> una tecnología avanzada que maximiza la eficiencia
+							energética.</span
+						>
+					</li>
+					<li class="flex items-start gap-2">
+						<Icon class="mt-2 w-4 shrink-0" name="check" />
+						<span
+							><strong>Conexión de tuberías:</strong> garantizando un funcionamiento sin problemas para
+							agua, calefacción y gas.</span
+						>
+					</li>
+					<li class="flex items-start gap-2">
+						<Icon class="mt-2 w-4 shrink-0" name="check" />
+						<span
+							><strong>Certificado Oficial Autorizado de Gas:</strong> cumpliendo con las normativas
+							y garantizando la seguridad.</span
+						>
+					</li>
+					<li class="flex items-start gap-2">
+						<Icon class="mt-2 w-4 shrink-0" name="check" />
+						<span
+							><strong>Instalación básica de la caldera:</strong> manteniendo la ubicación original para
+							una transición sin complicaciones.</span
+						>
+					</li>
+					<li class="flex items-start gap-2">
+						<Icon class="mt-2 w-4 shrink-0" name="check" />
+						<span
+							><strong>Termostato modulante:</strong> para un control preciso y eficiente de la temperatura
+							en tu hogar.</span
+						>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div data-reveal="fade-in-left" class="relative lg:-mr-8 xl:-mr-20">
+			<Image
+				class="absolute size-full rounded-l-2xl object-cover"
+				src={image07}
+				width={864}
+				alt=""
+			/>
+		</div>
+	</div>
+</section>

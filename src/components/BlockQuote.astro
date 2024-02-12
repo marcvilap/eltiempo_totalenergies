@@ -1,0 +1,13 @@
+---
+interface Props {
+	title: string
+}
+
+const { title } = Astro.props
+---
+
+<section data-reveal-group>
+	<div data-reveal="fade-in-up" class="container">
+		<h2 class="relative text-center text-2xl font-bold md:text-4xl lg:text-5xl">{title}</h2>
+	</div>
+</section>

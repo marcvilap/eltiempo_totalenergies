@@ -1,0 +1,47 @@
+---
+import { Image } from 'astro:assets'
+import Icon from '$components/Icon.astro'
+import logo from '$assets/images/logo.webp'
+import image01 from '$assets/images/image01.webp'
+---
+
+<section class="overflow-clip bg-gradient-to-b from-[#9dafaf] via-white to-white">
+	<div class="container flex min-h-screen flex-col justify-between gap-8 pb-24 pt-8">
+		<a class="w-24" href="/">
+			<span class="block text-xs font-bold">Día de la Energía</span>
+			<span class="mb-2 block text-xs">Un proyecto de</span>
+			<Image src={logo} width={144} alt="" />
+		</a>
+		<div class="grid items-center lg:grid-cols-2">
+			<div class="lg:pr-8">
+				<h1 class="mb-3 text-6xl font-bold text-[#006DFF]">Hogar eficiente</h1>
+				<h2 class="mb-6 text-3xl font-bold">Un paso más hacia el futuro de las renovables</h2>
+				<p>
+					Hoy celebramos el <strong>Día de la Energía</strong>, una fecha que va más allá de
+					simplemente recordarnos la importancia de este recurso vital. En este día reflexionamos
+					sobre la necesidad de cambiar nuestros hábitos energéticos para frenar el avance del
+					cambio climático. Es necesario buscar soluciones sostenibles y eficientes para nuestros
+					hogares.
+				</p>
+			</div>
+			<div class="relative lg:-mr-48 lg:-mt-16 lg:flex lg:items-center">
+				<Image class="w-full lg:absolute" src={image01} width={1104} alt="" />
+			</div>
+		</div>
+		<div class="relative flex flex-wrap justify-between gap-8">
+			<a class="inline-flex items-center gap-2 text-[#006DFF]" href="#down">
+				<Icon class="w-4 animate-bounce" name="scroll-down" />
+				<span class="font-medium">Scroll</span>
+			</a>
+			<a
+				class="inline-flex items-center gap-2 rounded-full bg-[#006DFF] px-5 py-2 font-bold text-white"
+				href=""
+			>
+				<span>Plan Renove Calderas</span>
+				<Icon class="w-2" name="arrow-right" />
+			</a>
+		</div>
+	</div>
+</section>
+
+<div id="down"></div>

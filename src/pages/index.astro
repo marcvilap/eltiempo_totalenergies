@@ -1,0 +1,64 @@
+---
+import Layout from '$layouts/Layout.astro'
+import BlockHero from '$components/BlockHero.astro'
+import BlockSticky from '$components/BlockSticky.astro'
+import BlockQuote from '$components/BlockQuote.astro'
+import BlockBoxes from '$components/BlockBoxes.astro'
+import BlockImage from '$components/BlockImage.astro'
+import BlockHalf from '$components/BlockHalf.astro'
+import BlockFooter from '$components/BlockFooter.astro'
+import image02 from '$assets/images/image02.webp'
+import image04 from '$assets/images/image04.webp'
+import image05 from '$assets/images/image05.webp'
+import image06 from '$assets/images/image06.webp'
+import image08 from '$assets/images/image08.webp'
+---
+
+<Layout>
+	<BlockHero />
+
+	<BlockSticky
+		image={image02}
+		title="Hogar eficiente por el bien del planeta y del bolsillo"
+		description="Mantener un hogar eficiente no solo es una medida responsable para proteger el medioambiente, sino también una decisión inteligente desde el punto de vista económico. La instalación de aislamiento adecuado, el uso de electrodomésticos inteligentes y la implementación de fuentes de energía renovable, como paneles solares, son medidas esenciales para reducir el impacto ambiental de nuestro hogar."
+		alternate
+	/>
+
+	<BlockImage />
+
+	<BlockQuote
+		title="La instalación de aislamiento adecuado, el uso de electrodomésticos inteligentes y la implementación de fuentes de energía renovable, como paneles solares, son medidas esenciales para reducir el impacto ambiental de nuestro hogar."
+	/>
+
+	<BlockBoxes
+		image={image04}
+		box1="Una de las partes más cruciales de un hogar eficiente es la caldera. Este dispositivo, que a menudo pasa desapercibido, juega un papel vital en nuestro bienestar diario proporcionando calefacción y agua caliente. Renovar la caldera por una más eficiente puede reducir el consumo de gas hasta en un 30%."
+		box2="Esto no solo representa un ahorro significativo en la factura de gas, estimado en unos anuales, sino que también disminuye nuestra huella de carbono. En los meses de invierno, donde el consumo se dispara, contar con una caldera adecuada es esencial."
+	/>
+
+	<BlockSticky
+		image={image05}
+		title="El consumidor y su caldera: una relación ignorada"
+		description="Muchos consumidores posponen la renovación de su caldera hasta que esta se estropea. La realidad es que esperar a que falle puede resultar en un gasto urgente y mucho más elevado. Ahora, especialmente en los meses fríos, es el momento ideal para considerar el cambio hacia una caldera que optimice mejor su rendimiento y evitar sorpresas desagradables."
+	/>
+
+	<div class="h-24"></div>
+
+	<BlockQuote
+		title="Muchos consumidores posponen la renovación de su caldera hasta que esta se estropea. La realidad es que esperar a que falle puede resultar en un gasto urgente y mucho más elevado."
+	/>
+
+	<BlockBoxes
+		image={image06}
+		box2="Esto no solo representa un ahorro significativo en la factura de gas, estimado en unos anuales, sino que también disminuye nuestra huella de carbono. En los meses de invierno, donde el consumo se dispara, contar con una caldera adecuada es esencial."
+	/>
+
+	<BlockHalf />
+
+	<BlockBoxes
+		image={image08}
+		box2="Los beneficios no terminan con la instalación. TotalEnergies ofrece una garantía de hasta 5 años y, además, partiendo de la realidad de que cada hogar es único, ofrece un amplio abanico de soluciones y fabricantes para que puedas elegir la caldera que mejor se adapte a tus necesidades."
+	/>
+
+	<BlockFooter />
+</Layout>

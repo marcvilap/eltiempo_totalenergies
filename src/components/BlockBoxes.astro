@@ -1,0 +1,37 @@
+---
+import { Image } from 'astro:assets'
+
+interface Props {
+	image: ImageMetadata
+	box1?: string
+	box2?: string
+}
+
+const { image, box1, box2 } = Astro.props
+---
+
+<section>
+	<div class="container sticky top-0 flex min-h-screen items-center justify-center py-24">
+		<Image class="parallax-zoom-in w-full max-w-2xl rounded-2xl" src={image} width={1008} alt="" />
+	</div>
+	{
+		box1 && (
+			<>
+				<div class="container relative">
+					<div class="max-w-xs rounded-2xl bg-white p-8 shadow-2xl">{box1}</div>
+				</div>
+				<div class="h-screen" />
+			</>
+		)
+	}
+	{
+		box2 && (
+			<>
+				<div class="container relative">
+					<div class="ml-auto max-w-xs rounded-2xl bg-white p-8 shadow-2xl">{box2}</div>
+				</div>
+				<div class="h-screen" />
+			</>
+		)
+	}
+</section>

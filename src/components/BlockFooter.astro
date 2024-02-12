@@ -1,0 +1,28 @@
+---
+import { Image } from 'astro:assets'
+import logo from '$assets/images/logo.webp'
+import image09 from '$assets/images/image09.webp'
+---
+
+<section class="overflow-clip bg-gradient-to-b from-[#d4e6e6] via-white to-[#9dafaf] py-24">
+	<div class="container">
+		<div data-reveal-group class="grid items-center gap-8 md:grid-cols-2 xl:grid-cols-2">
+			<div data-reveal="fade-in-right" class="text-3xl font-bold">
+				<h4>
+					Renovar tu caldera no solo impulsa la eficiencia energética de tu casa, sino que también
+					te brinda una oferta completa y accesible.
+				</h4>
+				<h4 class="mt-6 text-[#006DFF]">¡El futuro de las renovables comienza en tu hogar!</h4>
+			</div>
+			<div data-reveal="fade-in-left" class="-mr-40">
+				<Image class="w-full" src={image09} width={1032} alt="" />
+			</div>
+		</div>
+		<div data-reveal-group>
+			<div data-reveal="fade-in-up">
+				<p class="mb-6 text-center">ElTiempo Content para</p>
+				<Image class="mx-auto w-32" src={logo} width={192} alt="" />
+			</div>
+		</div>
+	</div>
+</section>

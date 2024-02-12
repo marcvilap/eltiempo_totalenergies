@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets'
+
+interface Props {
+	image: ImageMetadata
+	title: string
+	description: string
+	alternate?: boolean
+}
+
+const { image, title, description, alternate } = Astro.props
+---
+
+<section>
+	<Image
+		class="parallax-zoom-in sticky top-0 h-screen w-full object-cover"
+		src={image}
+		width={1920}
+		height={1080}
+		alt=""
+	/>
+	<div class="container relative">
+		<div
+			class:list={['max-w-lg rounded-2xl bg-white p-8 shadow-2xl xl:px-12', alternate && 'ml-auto']}
+		>
+			<h3 class="mb-6 text-3xl font-bold">{title}</h3>
+			<p>{description}</p>
+		</div>
+		<div class="h-screen"></div>
+	</div>
+</section>
